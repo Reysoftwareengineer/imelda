@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Untuk Imelll 💙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- AUDIO PLAYER -->
+    <audio id="bgMusic" src="music/Sempurna.mp3" loop></audio>
+
+    <!-- FLOATING MUSIC BUTTON -->
+    <div class="music-button" id="musicBtn">🎵</div>
+
+    <div class="hearts-bg" id="hearts-bg"></div>
+
+    <!-- PAGE 1 – Intro -->
+    <section class="page-section active" id="page1">
+      <div class="centered">
+        <img src="img/foto1.jpeg" class="hero-img" />
+
+        <h1
+          style="
+            font-family: 'Dancing Script';
+            font-size: 38px;
+            margin-top: 18px;
+          ">
+          Ada sesuatu yang ingin aku bilang... 💙
+        </h1>
+
+        <p style="margin-top: 10px; font-size: 15px">
+          Ini Website yang aku buat khusus buat Imelda Dwi Agastya Monica. Klik
+          tombol di bawah yaa 😊
+        </p>
+
+        <button class="btn-modern" onclick="startMusic(); goTo('page2')">
+          Lanjut 👉
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 2 – Story -->
+    <section class="page-section" id="page2">
+      <div class="centered">
+        <h2 style="font-size: 26px; margin-bottom: 20px">Sedikit Cerita</h2>
+
+        <div class="story-box">
+          Sejak pertama kali aku kenal kamu, semuanya rasanya lebih ringan. Cara
+          kamu cerita, ketawa, dan ngomong hal kecil pun bikin hari-hariku lebih
+          berarti.
+
+          <br /><br />
+
+          Sampai akhirnya aku sadar… aku selalu nunggu momen bisa chat atau
+          ketemu kamu.
+
+          <br /><br />
+          Aku beneran sayang sama kamu. 💙
+        </div>
+
+        <button class="btn-modern" onclick="goTo('page3')">
+          Lihat Foto 💙
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 3 – Gallery -->
+    <section class="page-section" id="page3">
+      <div class="centered">
+        <h2 style="font-size: 26px">
+          Beberapa Momen Bareng Imelll Tercintaaa dan Tersayanggg
+        </h2>
+
+        <div class="gallery-grid">
+          <img
+            src="img/foto2.jpeg"
+            class="gallery-photo"
+            onclick="sendToWa()" />
+          <img
+            src="img/foto3.jpeg"
+            class="gallery-photo"
+            onclick="sendToWa()" />
+          <img
+            src="img/foto4.jpeg"
+            class="gallery-photo"
+            onclick="sendToWa()" />
+        </div>
+
+        <button class="btn-modern" onclick="goTo('page4')">Lanjut 💙</button>
+      </div>
+    </section>
+
+    <!-- PAGE 4 – Confession -->
+    <section class="page-section" id="page4">
+      <div class="centered">
+        <div class="question-box">
+          <h2 style="font-family: 'Dancing Script'; font-size: 32px">
+            Jadi gini...
+          </h2>
+
+          <p style="margin-top: 10px">
+            Dari semua cerita dan momen kita, aku mau jujur sesuatu ke kamu…
+          </p>
+
+          <p style="margin-top: 15px; font-weight: 600; font-size: 18px">
+            Aku suka sama kamu. Dan ngga hanya suka tapi mulai timbul rasa
+            sayanggg. Sepertinya lebih baik kamu jadi pacarku dehhh? 💙
+          </p>
+
+          <button class="btn-modern" onclick="sendToWa()">Iyaa mauu 🤍</button>
+          <button class="btn-modern" onclick="goTo('page1')">
+            Balik dulu 🙈
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
